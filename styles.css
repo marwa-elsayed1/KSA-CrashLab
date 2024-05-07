@@ -1364,7 +1364,7 @@ img[alt=added-card]:hover {
     color: #fff;
     padding: var(--spacing-md);
     font-size: var(--h4-size);
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 75.43%);
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 98.43%);
 }
 
 /* .first-left-content:hover {
@@ -3242,6 +3242,7 @@ swiper-slide img {
     /* position: absolute; */
     margin-top: -456px;
     position: absolute;
+    right: 0%;
 }
 
 
@@ -7150,6 +7151,9 @@ img[alt="compilance-car"] {
     }
     .english-customers{
         right: 2%;
+    }
+    .inner-margin{
+        right: 1%;
     }
 }
 @media  screen and (max-width: 992px) and (min-width:786px) {
