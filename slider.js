@@ -46,18 +46,22 @@ function HoveringSlider(){
 function EndHoveringSlider(){
   firstShrinked.style.backgroundImage = 'url("./images/back-shrinked1.png")';
   firstShrinked.style.width = "26%";
+  secondShrinked.style.width = "24%";
+
 
 }
 
 function HoveringFirstFromThird(){
   firstShrinked.style.backgroundImage = 'url("./images/un-colored1.png")';
-  firstShrinked.style.width = "23%";
+  firstShrinked.style.width = "22%";
 }
 
 function EndingHoveringFirstFromThird(){
   firstShrinked.style.backgroundImage = 'url("./images/back-shrinked1.png")';
   firstShrinked.style.width = "26%";
+  thirdShrinked.style.width = "24%";
 }
+
 
 // Second Part of Slider
 
