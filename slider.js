@@ -44,7 +44,7 @@ function HoveringSlider(){
 }
 
 function EndHoveringSlider(){
-  firstShrinked.style.backgroundImage = 'url("./images/colored1.png")';
+  firstShrinked.style.backgroundImage = 'url("./images/back-shrinked1.png")';
   firstShrinked.style.width = "26%";
 
 }
@@ -55,7 +55,7 @@ function HoveringFirstFromThird(){
 }
 
 function EndingHoveringFirstFromThird(){
-  firstShrinked.style.backgroundImage = 'url("./images/colored1.png")';
+  firstShrinked.style.backgroundImage = 'url("./images/back-shrinked1.png")';
   firstShrinked.style.width = "26%";
 }
 

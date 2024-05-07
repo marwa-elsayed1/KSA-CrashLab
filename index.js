@@ -570,7 +570,9 @@ function generateJSON() {
 document.addEventListener("DOMContentLoaded", generateJSON);
 
 
-// function loadPage() {
-//   window.location.reload();
-// }
-
+const links = document.querySelectorAll('a[data-lang]');
+  for (const link of links) {
+    const enLink = link.dataset.langEn;
+    const arLink = link.dataset.langAr;
+    link.href = lang === 'ar' ? arLink : enLink;
+  }
