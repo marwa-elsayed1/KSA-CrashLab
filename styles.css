@@ -822,7 +822,7 @@ h6 {
 .accreditiations .right-column:hover {
     background-image: url("./images/new-mirorred.png");
     transform: scaleX(-1);
-    
+    cursor: pointer;
 }
 
 
