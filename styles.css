@@ -571,7 +571,7 @@ footer {
 
 .table-of-content {
     margin: var(--spacing-xxl) 0;
-    padding: 0 var(--spacing-xl)
+    /* padding: 0 var(--spacing-xl) */
 }
 
 
@@ -1928,7 +1928,7 @@ img[alt=overview] {
 .orangy-bullet {
     display: flex;
     column-gap: 15px;
-    align-items: center;
+    align-items: start;
 }
 
 .bullet {
@@ -1937,6 +1937,7 @@ img[alt=overview] {
     padding: 7px;
     background-color: var(--primary-color-1);
     border-radius: 50%;
+    margin-top: 9px;
 }
 
 
@@ -2451,7 +2452,7 @@ img[alt="right-arrow"]:hover {
 }
 
 .inner-table h4 {
-    margin: var(--spacing-md) 0;
+    /* margin: var(--spacing-md) 0; */
 }
 
 .table-of-content h5 {
