@@ -102,7 +102,7 @@ img[alt=mission3] {
     text-transform: uppercase;
     padding: var(--spacing-lg) var(--spacing-lg);
     position: relative;
-    left: 11px;
+    left: 1px;
     bottom: -51px;
     box-shadow: 0 0 11px 1px rgb(241 241 241);
     width: 43%;
@@ -138,10 +138,12 @@ img[alt=mission3] {
     }
 
     .innovative-cards .left-column{
-        width: 46%;
+        position: unset;
+        width: 100%;
+        height: auto;
     }
     .innovative-cards .right-column {
-        /* width: 100%; */
+        width: 100%;
     }
 }
 
@@ -480,7 +482,7 @@ button[name=start]:hover {
 .section-container,
 .innovative-cards .two-columns,
 img[alt=added-card] {
-    position: relative
+    position: relative;
 }
 
 
@@ -725,13 +727,13 @@ h6 {
     height: 500px;
     background-image: url(./images/un-colored2.png);
     background-size: cover;
-    transition: width 0.5s;
+    transition: width 0.5s ease-in-out;
     flex-shrink: 0;
 }
 
 
 .shrinked-background1:hover{
-    background-image: url(./images/un-colored1.png);
+    /* background-image: url(./images/un-colored1.png); */
     flex-shrink: 0;
     width: 18%;
     cursor: pointer;
@@ -1085,6 +1087,10 @@ footer h4 {
     background-position: 98px 18px !important;
     color: white;
     cursor: pointer;
+}
+
+.slideshow-container .section-container{
+    padding: 0;
 }
 
 .inner-service p {
@@ -2133,6 +2139,7 @@ img[alt="inno-people"] {
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
+    justify-content: center;
 }
 
 .innovation-details>div {
@@ -3244,6 +3251,7 @@ swiper-slide img {
     right: 0%;
     margin-top: -550px;
     position: absolute;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -7210,7 +7218,7 @@ img[alt="compilance-car"] {
         z-index: 2;
         position: relative;
         margin: 25px 0 25px 0;
-        margin-top: -407px;
+        margin-top: -320px;
         font-size: var(--h3-size);
         display: flex;
         flex-direction: column;
@@ -7266,7 +7274,7 @@ img[alt="compilance-car"] {
         z-index: 2;
         position: relative;
         margin: 25px 0 25px 0;
-        margin-top: -407px;
+        margin-top: -320px;
         font-size: var(--h3-size);
         display: flex;
         flex-direction: column;
@@ -7320,11 +7328,13 @@ img[alt="compilance-car"] {
         height: auto;
     }
     .inner-margin{
-        width: 100%;
+        width: 95%;
+        /* margin: auto; */
+        left: 2.2%;
         z-index: 2;
-        position: relative;
+        position: absolute;
         margin: 25px 0 25px 0;
-        margin-top: -407px;
+        margin-top: -460px;
         font-size: var(--h3-size);
         display: flex;
         flex-direction: column;
@@ -7334,6 +7344,9 @@ img[alt="compilance-car"] {
     }
     .customer-left{
         background-size: contain;
+    }
+    img[alt="inno-people"]{
+        display: none;
     }
 }
 
@@ -7359,7 +7372,7 @@ img[alt="compilance-car"] {
     background-image: url("./images/back-shrinked1.png");
     height: 500px;
     background-size: cover;
-    transition: width 0.5s;
+    transition: width 0.5s ease-in-out;
     flex-shrink: 0;
 }
 
@@ -7376,7 +7389,7 @@ img[alt="compilance-car"] {
     background-image: url("./images/back-shrinked3.png");
     height: 500px;
     background-size: cover;
-    transition: width 0.5s;
+    transition: width 0.5s ease-in-out;
     flex-shrink: 0;
 }
 
@@ -7404,9 +7417,9 @@ img[alt="compilance-car"] {
 }
 
 .shrinked-background1:hover{
-    background-image: url(./images/un-colored1.png);
+    /* background-image: url(./images/un-colored1.png); */
     flex-shrink: 0;
-    width: 20%;
+    /* width: 20%; */
     cursor: pointer;
 }
 
@@ -7440,13 +7453,13 @@ img[alt="compilance-car"] {
 .shrinked-background2:hover {
     background-image: url(./images/back-shrinked2.png);
     cursor: pointer;
-    width: 20%;
+    /* width: 20%; */
     flex-grow: 2;
 }
 
 .shrinked-background3:hover {
     background-image: url(./images/back-shrinked3.png);
     cursor: pointer;
-    width: 16%;
+    /* width: 16%; */
     flex-grow: 2;
 }

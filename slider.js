@@ -30,6 +30,11 @@ var secondShrinked = document.getElementById("second-shrinked");
 var firstShrinked = document.getElementById("first-shrinked");
 var thirdShrinked = document.getElementById("third-shrinked");
 
+var firstShrinkedDiv = document.getElementById("inner-first");
+var secondShrinkedDiv = document.getElementById("inner-second");
+var thirdShrinkedDiv = document.getElementById("inner-third");
+
+
 secondShrinked.addEventListener("mouseover", HoveringSlider);
 secondShrinked.addEventListener("mouseout", EndHoveringSlider);
 thirdShrinked.addEventListener("mouseover", HoveringFirstFromThird);
@@ -39,14 +44,22 @@ thirdShrinked.addEventListener("mouseout", EndingHoveringFirstFromThird);
 function HoveringSlider(){
 
   firstShrinked.style.backgroundImage = 'url("./images/un-colored1.png")';
-  firstShrinked.style.width = "23%";
+  firstShrinked.style.width = "19%";
+  thirdShrinked.style.width = "19%";
+  
+  firstShrinkedDiv.style.display = "none";
+  thirdShrinkedDiv.style.display = "none";
+
 
 }
 
 function EndHoveringSlider(){
   firstShrinked.style.backgroundImage = 'url("./images/back-shrinked1.png")';
   firstShrinked.style.width = "26%";
-  secondShrinked.style.width = "24%";
+  secondShrinked.style.width = "22%";
+  thirdShrinked.style.width = "22%";
+  firstShrinkedDiv.style.display = "block";
+  thirdShrinkedDiv.style.display = "block";
 
 
 }
@@ -54,12 +67,19 @@ function EndHoveringSlider(){
 function HoveringFirstFromThird(){
   firstShrinked.style.backgroundImage = 'url("./images/un-colored1.png")';
   firstShrinked.style.width = "22%";
+  secondShrinked.style.width = "22%";
+
+  firstShrinkedDiv.style.display = "none";
+  secondShrinkedDiv.style.display = "none";
 }
 
 function EndingHoveringFirstFromThird(){
   firstShrinked.style.backgroundImage = 'url("./images/back-shrinked1.png")';
   firstShrinked.style.width = "26%";
-  thirdShrinked.style.width = "24%";
+  thirdShrinked.style.width = "20%";
+  
+  firstShrinkedDiv.style.display = "block";
+  secondShrinkedDiv.style.display = "block";
 }
 
 
