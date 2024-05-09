@@ -35,6 +35,9 @@ var secondShrinkedDiv = document.getElementById("inner-second");
 var thirdShrinkedDiv = document.getElementById("inner-third");
 
 
+
+
+
 secondShrinked.addEventListener("mouseover", HoveringSlider);
 secondShrinked.addEventListener("mouseout", EndHoveringSlider);
 thirdShrinked.addEventListener("mouseover", HoveringFirstFromThird);
@@ -46,11 +49,10 @@ function HoveringSlider(){
   firstShrinked.style.backgroundImage = 'url("./images/un-colored1.png")';
   firstShrinked.style.width = "19%";
   thirdShrinked.style.width = "19%";
-  
+
   firstShrinkedDiv.style.display = "none";
   thirdShrinkedDiv.style.display = "none";
-
-
+  secondShrinkedDiv.style.display = "block";
 }
 
 function EndHoveringSlider(){
@@ -58,8 +60,10 @@ function EndHoveringSlider(){
   firstShrinked.style.width = "26%";
   secondShrinked.style.width = "22%";
   thirdShrinked.style.width = "22%";
+ 
+  secondShrinkedDiv.style.display = "none";
   firstShrinkedDiv.style.display = "block";
-  thirdShrinkedDiv.style.display = "block";
+
 
 
 }
@@ -71,6 +75,8 @@ function HoveringFirstFromThird(){
 
   firstShrinkedDiv.style.display = "none";
   secondShrinkedDiv.style.display = "none";
+  thirdShrinkedDiv.style.display = "block";
+
 }
 
 function EndingHoveringFirstFromThird(){
@@ -79,7 +85,8 @@ function EndingHoveringFirstFromThird(){
   thirdShrinked.style.width = "20%";
   
   firstShrinkedDiv.style.display = "block";
-  secondShrinkedDiv.style.display = "block";
+  secondShrinkedDiv.style.display = "none";
+  thirdShrinkedDiv.style.display = "none";
 }
 
 

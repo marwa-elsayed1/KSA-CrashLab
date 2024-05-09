@@ -1,3 +1,5 @@
+
+
 getLanguage();
 function getLanguage() {
   var currentLanguage = localStorage.getItem('lang');
@@ -9,6 +11,12 @@ function getLanguage() {
 
 
 
+
+var url = '', lang = '/en';
+
+url = url.replace(/\/\w*/,lang);
+
+console.log(url); 
 
 
 document.addEventListener('click', function (event) {
@@ -76,6 +84,7 @@ function showBackground() {
 function change_arabic() {
 
 // Accessing Before Pseudo Element
+
 
   let ArabicCarElement = document.querySelector('.comp-car-description');
 
@@ -576,3 +585,5 @@ const links = document.querySelectorAll('a[data-lang]');
     const arLink = link.dataset.langAr;
     link.href = lang === 'ar' ? arLink : enLink;
   }
+
+
