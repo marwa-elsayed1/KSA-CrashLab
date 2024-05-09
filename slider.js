@@ -92,9 +92,14 @@ function EndingHoveringFirstFromThird(){
 
 // Second Part of Slider
 
-var SecondNewService = document.getElementById("second-new-service");
-var FirstNewService = document.getElementById("first-new-service");
-var ThirdNewService = document.getElementById("third-new-service");
+var SecondNewService = document.getElementById("new-second-shrinked");
+var FirstNewService = document.getElementById("new-first-shrinked");
+var ThirdNewService = document.getElementById("new-third-shrinked");
+
+var newFirstShrinkedDiv = document.getElementById("new-inner-first");
+var newSecondShrinkedDiv = document.getElementById("new-inner-second");
+var newThirdShrinkedDiv = document.getElementById("new-inner-third");
+
 
 SecondNewService.addEventListener("mouseover", NewServiceHoveringSlider);
 SecondNewService.addEventListener("mouseout", EndNewServiceHoveringSlider);
@@ -104,33 +109,69 @@ ThirdNewService.addEventListener("mouseout", EndingNewServiceHoveringFirstFromTh
 
 function NewServiceHoveringSlider(){
 
-  FirstNewService.style.backgroundImage = 'url("./images/un-colored4.png")';
-  FirstNewService.style.width = "23%";
+  FirstNewService.style.backgroundImage = 'url("./images/un-colored1.png")';
+  FirstNewService.style.width = "19%";
+  ThirdNewService.style.width = "19%";
+  SecondNewService.style.width = "26%";
+  SecondNewService.style.backgroundImage = 'url("./images/new-colored2.png")';
+
+
+  newFirstShrinkedDiv.style.display = "none";
+  // ThirdNewService.style.display = "none";
+  newSecondShrinkedDiv.style.display = "block";
 
 }
 
 function EndNewServiceHoveringSlider(){
-  FirstNewService.style.backgroundImage = 'url("./images/colored4.png")';
+  FirstNewService.style.backgroundImage = 'url("./images/new-colored1.png")';
+  newFirstShrinkedDiv.style.display = "block";
+
+  SecondNewService.style.backgroundImage = 'url("./images/un-colored5.png")';
+
+  SecondNewService.style.width = "19%";
+  newSecondShrinkedDiv.style.display = "none";
+
   FirstNewService.style.width = "26%";
 
 }
 
 function NewServiceHoveringFirstFromThird(){
-  FirstNewService.style.backgroundImage = 'url("./images/un-colored4.png")';
-  FirstNewService.style.width = "23%";
+  // FirstNewService.style.backgroundImage = 'url("./images/un-colored4.png")';
+  // FirstNewService.style.width = "23%";
+  FirstNewService.style.backgroundImage = 'url("./images/un-colored1.png")';
+  ThirdNewService.style.backgroundImage = 'url("./images/new-colored3.png")';
+
+  FirstNewService.style.width = "20%";
+  ThirdNewService.style.width = "26%";
+
+  newFirstShrinkedDiv.style.display = "none";
+  newThirdShrinkedDiv.style.display = "block";
+  newSecondShrinkedDiv.style.display = "none";
+  
+
 }
 
 function EndingNewServiceHoveringFirstFromThird(){
-  FirstNewService.style.backgroundImage = 'url("./images/colored4.png")';
+  ThirdNewService.style.backgroundImage = 'url("./images/un-colored6.png")';
+  newThirdShrinkedDiv.style.display = "none";
+
   FirstNewService.style.width = "26%";
+  FirstNewService.style.backgroundImage = 'url("./images/new-colored1.png")';
+
+  newFirstShrinkedDiv.style.display = "block";
 }
 
 
 // Third Part of Slider
 
-var SecondNewerService = document.getElementById("second-newer-service");
-var FirstNewerService = document.getElementById("first-newer-service");
-var ThirdNewerService = document.getElementById("third-newer-service");
+
+var SecondNewerService = document.getElementById("newer-second-shrinked");
+var FirstNewerService = document.getElementById("newer-first-shrinked");
+var ThirdNewerService = document.getElementById("newer-third-shrinked");
+
+var newerFirstShrinkedDiv = document.getElementById("newer-inner-first");
+var newerSecondShrinkedDiv = document.getElementById("newer-inner-second");
+var newerThirdShrinkedDiv = document.getElementById("newer-inner-third");
 
 SecondNewerService.addEventListener("mouseover", NewerServiceHoveringSlider);
 SecondNewerService.addEventListener("mouseout", EndNewerServiceHoveringSlider);
@@ -140,8 +181,14 @@ ThirdNewerService.addEventListener("mouseout", EndingNewerServiceHoveringFirstFr
 
 function NewerServiceHoveringSlider(){
 
+  SecondNewerService.style.backgroundImage = 'url("./images/newer-colored2.png")';
+  SecondNewerService.style.width = "26%";
+  FirstNewerService.style.width = "19%";
   FirstNewerService.style.backgroundImage = 'url("./images/un-colored7.png")';
-  FirstNewerService.style.width = "23%";
+  newerSecondShrinkedDiv.style.display = "block";
+  newerFirstShrinkedDiv.style.display = "none";
+
+
 
 }
 
@@ -149,14 +196,29 @@ function EndNewerServiceHoveringSlider(){
   FirstNewerService.style.backgroundImage = 'url("./images/colored7.png")';
   FirstNewerService.style.width = "26%";
 
+  SecondNewerService.style.width = "19%";
+  SecondNewerService.style.backgroundImage = 'url("./images/un-colored8.png")';
+  newerSecondShrinkedDiv.style.display = "none";
+
+
+
+
 }
 
 function NewerServiceHoveringFirstFromThird(){
   FirstNewerService.style.backgroundImage = 'url("./images/un-colored7.png")';
-  FirstNewerService.style.width = "23%";
+  FirstNewerService.style.width = "19%";
+  ThirdNewerService.style.width = "26%";
+  newerThirdShrinkedDiv.style.display = "block";
+  newerFirstShrinkedDiv.style.display = "none";
+  ThirdNewerService.style.backgroundImage = 'url("./images/newer-colored3.png")'
 }
 
 function EndingNewerServiceHoveringFirstFromThird(){
   FirstNewerService.style.backgroundImage = 'url("./images/colored7.png")';
   FirstNewerService.style.width = "26%";
+  ThirdNewerService.style.width = "19%";
+  newerThirdShrinkedDiv.style.display = "none";
+  ThirdNewerService.style.backgroundImage = 'url("./images/un-colored9.png")';
+
 }

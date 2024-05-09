@@ -722,6 +722,51 @@ h6 {
     flex-shrink: 0;
 }
 
+.new-service-background1{
+    height: 500px;
+    background-image: url(./images/new-colored1.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+.new-service-background2{
+    height: 500px;
+    background-image: url(./images/new-colored2.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+.new-service-background3{
+    height: 500px;
+    background-image: url(./images/new-colored3.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+
+
+.newer-service-background1{
+    height: 500px;
+    background-image: url(./images/newer-colored1.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+.newer-service-background2{
+    height: 500px;
+    background-image: url(./images/newer-colored2.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+.newer-service-background3{
+    height: 500px;
+    background-image: url(./images/newer-colored3.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+
 .shrinked-background1 {
     width: 26%;
 }
@@ -7412,31 +7457,6 @@ img[alt="compilance-car"] {
 }
 
 
-.shrinked-background1 {
-    background-image: url("./images/back-shrinked1.png");
-    height: 500px;
-    background-size: cover;
-    transition: width 0.5s ease-in-out;
-    flex-shrink: 0;
-}
-
-
-.shrinked-background2 {
-    background-image: url("./images/back-shrinked2.png");
-    height: 500px;
-    background-size: cover;
-    transition: width 0.5s;
-    flex-shrink: 0;
-}
-
-.shrinked-background3 {
-    background-image: url("./images/back-shrinked3.png");
-    height: 500px;
-    background-size: cover;
-    transition: width 0.5s ease-in-out;
-    flex-shrink: 0;
-}
-
 
 
 .shrinked-background1 {
@@ -7459,6 +7479,53 @@ img[alt="compilance-car"] {
     transition: width 0.5s;
     flex-shrink: 0;
 }
+
+
+
+.new-service-background1 {
+    width: 26%;
+}
+
+.new-service-background2 {
+    height: 500px;
+    background-image: url(./images/un-colored5.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+
+
+.new-service-background3 {
+    height: 500px;
+    background-image: url(./images/un-colored6.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+
+
+
+.newer-service-background1 {
+    width: 26%;
+}
+
+.newer-service-background2 {
+    height: 500px;
+    background-image: url(./images/un-colored8.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+
+
+.newer-service-background3 {
+    height: 500px;
+    background-image: url(./images/un-colored9.png);
+    background-size: cover;
+    transition: width 0.5s;
+    flex-shrink: 0;
+}
+
 
 .shrinked-background1:hover {
     /* background-image: url(./images/un-colored1.png); */
@@ -7490,7 +7557,7 @@ img[alt="compilance-car"] {
 
 .specific-details {
     display: flex;
-    align-items: center;
+    align-items: start;
     column-gap: 20px;
 }
 
