@@ -2190,6 +2190,19 @@ img[alt=overview] {
     height: 100vh;
 }
 
+
+.black-unique-arrow{
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(97, 97, 97, 1));
+    top: -30px;
+    right: -15px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
 .about-container-navbar {
     margin-top: 0;
 }
@@ -7807,6 +7820,7 @@ img[alt="compilance-car"] {
     background-color: rgba(255, 173, 0, 0.6);
     padding: var(--spacing-md);
     margin-bottom: 37px;
+    position: relative;
 }
 
 
