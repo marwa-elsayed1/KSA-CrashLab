@@ -277,6 +277,11 @@ function change_arabic() {
   });
 
 
+  const innerMargin = document.querySelector('.inner-margin');
+  if (innerMargin) {
+    innerMargin.classList.add("arabic-inner-margin");
+    innerMargin.classList.remove('english-inner-margin');
+  }
 
   var ArabicSingleCardService = document.querySelector(".single-card-service");
   if (ArabicSingleCardService) {
@@ -430,6 +435,12 @@ function change_english() {
     customerStoriesRightElements.classList.remove('arabic-customers');
   }
 
+  const innerMargin = document.querySelector('.inner-margin');
+  if (innerMargin) {
+    innerMargin.classList.add("english-inner-margin");
+    innerMargin.classList.remove('arabic-inner-margin');
+  }
+  
 
   const innovativeCardsLeftColumn = document.querySelector(".arabic-innovative-cards-left-column");
   if (innovativeCardsLeftColumn) {
@@ -495,13 +506,23 @@ function showDiv(Div) {
   let inputSubject = document.forms["contact-form"]["user_subject"].value;
   let inputMsg = document.forms["contact-form"]["message"].value;
 
-  if (x.style.display == "none") {
-    if (inputName != "" && inputEmail != "" && inputSubject != "" && inputMsg != "") {
-      x.style.display = "block";
-    }
-  } else {
-    x.style.display = "none";
-  }
+  let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+  let testEmails = [ inputEmail];
+  
+  testEmails.forEach((address) => {
+    if((regex.test(address))== true){
+      if (x.style.display == "none") {
+        if (inputName != "" && inputEmail != "" && inputSubject != "" && inputMsg != "") {
+          x.style.display = "block";
+        }
+      } else {
+        x.style.display = "none";
+      }
+    }  
+});
+
+
+ 
 }
 
 

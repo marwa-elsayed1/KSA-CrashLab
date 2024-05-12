@@ -2173,12 +2173,12 @@ img[alt=overview] {
 }
 
 .bullet {
-    height: 10px;
-    width: 10px;
+    height: 5px;
+    width: 5px;
     padding: 7px;
     background-color: var(--primary-color-1);
     border-radius: 50%;
-    margin-top: 9px;
+    margin-top: 4px;
 }
 
 
@@ -3501,6 +3501,8 @@ swiper-slide img {
     justify-content: end;
 }
 
+
+
 .inner-margin {
     box-shadow: 2px 2px 5px 1px gainsboro;
     background-color: #fff;
@@ -3515,6 +3517,13 @@ swiper-slide img {
     transition: all 0.5s ease-in-out;
 }
 
+.english-inner-margin{
+    right: 0%;
+}
+
+.arabic-inner-margin{
+    right: inherit;
+}
 
 .arabic-customers {
     background-color: #fff;
