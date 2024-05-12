@@ -82,9 +82,7 @@
     flex-shrink: 0;
 }
 
-.inner-specific-shrinked {
-    display: none;
-}
+
 
 
 html,
@@ -811,6 +809,7 @@ h6 {
     transition: width 0.5s;
     flex-shrink: 0;
 }
+
 
 
 .newer-service-background1{
