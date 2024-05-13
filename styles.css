@@ -5791,7 +5791,7 @@ img[alt="arabic-flag"]:hover {
     .language-toggle {
         display: flex;
         align-items: center;
-        padding: 4px 15px;
+        padding: 4px 21px;
         border: 1px solid #ddd;
         border-radius: 4px;
         cursor: pointer;
@@ -5825,7 +5825,7 @@ img[alt="arabic-flag"]:hover {
     .language-toggle {
         display: flex;
         align-items: center;
-        padding: 4px 15px;
+        padding: 4px 21px;
         border: 1px solid #ddd;
         border-radius: 4px;
         cursor: pointer;
@@ -5859,7 +5859,7 @@ img[alt="arabic-flag"]:hover {
     .language-toggle {
         display: flex;
         align-items: center;
-        padding: 4px 15px;
+        padding: 4px 21px;
         border: 1px solid #ddd;
         border-radius: 4px;
         cursor: pointer;
