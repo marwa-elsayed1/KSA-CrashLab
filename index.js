@@ -202,15 +202,7 @@ function change_arabic() {
 
 
 
-  var ArabicAboutContainer = document.querySelector(".about-container");
-  if (ArabicAboutContainer) {
-    ArabicAboutContainer.classList.toggle("arabic-about-container");
-
-    // If the element has the "english-about-container" class, remove it
-    if (ArabicAboutContainer.classList.contains("english-about-container")) {
-      ArabicAboutContainer.classList.remove("english-about-container");
-    }
-  }
+ 
 
 
   
@@ -262,6 +254,14 @@ function change_arabic() {
     lastAddedCard.classList.remove('last-added-card');
   }
 
+
+  const arabicMainContainer = document.querySelector(".main-container");
+  if (arabicMainContainer) {
+    arabicMainContainer.classList.add("arabic-main-container");
+    arabicMainContainer.classList.remove('english-main-container');
+  }
+
+
   const orangeCard = document.querySelector(".orange-card");
   if (orangeCard) {
     orangeCard.classList.add("arabic-orange-card");
@@ -287,6 +287,19 @@ function change_arabic() {
   if (ArabicSingleCardService) {
     ArabicSingleCardService.classList.add("arabic-single-card-service");
     ArabicSingleCardService.classList.remove("english-single-card-service");
+  }
+
+  const arabicAboutContainer = document.querySelector('.about-container');
+  if (arabicAboutContainer) {
+    arabicAboutContainer.classList.add("arabic-about-container");
+    arabicAboutContainer.classList.remove('english-about-container');
+  }
+
+
+  var ArabicRecoHeading = document.querySelector(".reco-heading")
+  if (ArabicRecoHeading) {
+    ArabicRecoHeading.classList.add("arabic-reco-heading");
+    ArabicRecoHeading.classList.remove("english-reco-heading");
   }
 
   var arabicContactFormContainer = document.querySelector('.contact-form-container');
@@ -348,6 +361,12 @@ function change_english() {
   }
 
 
+
+  const arabicMainContainer = document.querySelector(".main-container");
+  if (arabicMainContainer) {
+    arabicMainContainer.classList.add("english-main-container");
+    arabicMainContainer.classList.remove('arabic-main-container');
+  }
   
   const compCarImg = document.querySelector(".comp-car");
   if (compCarImg) {
@@ -360,6 +379,12 @@ function change_english() {
   if (innerDetails) {
     innerDetails.classList.add("english-prev");
     innerDetails.classList.remove("arabic-prev");
+  }
+
+  const englishAboutContainer = document.querySelector('.about-container');
+  if (englishAboutContainer) {
+    englishAboutContainer.classList.add("english-about-container");
+    englishAboutContainer.classList.remove('arabic-about-container');
   }
 
 
@@ -459,16 +484,6 @@ function change_english() {
 
 
 
-  var ArabicAboutContainer = document.querySelector(".about-container");
-  if (ArabicAboutContainer) {
-    ArabicAboutContainer.classList.toggle("english-about-container");
-
-    // If the element has the "english-about-container" class, remove it
-    if (ArabicAboutContainer.classList.contains("arabic-about-container")) {
-      ArabicAboutContainer.classList.remove("arabic-about-container");
-    }
-  }
-
 
 
   var EnglishAboutDescOne = document.querySelector(".desc-onee");
@@ -483,6 +498,14 @@ function change_english() {
     EnglishAboutDescTwo.classList.add("english-desc-two");
     EnglishAboutDescTwo.classList.remove("arabic-desc-two");
   }
+
+
+  var EnglishRecoHeading = document.querySelector(".reco-heading")
+  if (EnglishRecoHeading) {
+    EnglishRecoHeading.classList.add("english-reco-heading");
+    EnglishRecoHeading.classList.remove("arabic-reco-heading");
+  }
+
 
 
   var EnglishSingleCardService = document.querySelector(".single-card-service");
@@ -599,12 +622,5 @@ function generateJSON() {
 // Call the function to generate JSON
 document.addEventListener("DOMContentLoaded", generateJSON);
 
-
-const links = document.querySelectorAll('a[data-lang]');
-  for (const link of links) {
-    const enLink = link.dataset.langEn;
-    const arLink = link.dataset.langAr;
-    link.href = lang === 'ar' ? arLink : enLink;
-  }
 
 

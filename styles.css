@@ -202,6 +202,15 @@ img[alt="yellow-car"]{
     margin-top: 85px;
 }
 
+.english-reco-heading{
+    text-align: left;
+}
+
+.arabic-reco-heading{
+    text-align: right;
+
+}
+
 .journey-description-two {
     font-size: var(--h4-size);
 }
@@ -275,6 +284,14 @@ img[alt="yellow-car"]{
         text-align: left;
         margin-top: 15px;
     }
+    .english-reco-heading{
+        text-align: left;
+    }
+
+    .arabic-reco-heading{
+        text-align: right;
+    }
+
     .innov-heading{
         margin-bottom:15px ;
     }
@@ -310,6 +327,13 @@ img[alt="yellow-car"]{
     .innov-heading{
         margin-bottom:15px ;
     }
+    .english-reco-heading{
+        text-align: left;
+    }
+
+    .arabic-reco-heading{
+        text-align: right;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -340,6 +364,13 @@ img[alt="yellow-car"]{
     }
     .innov-heading{
         margin-bottom:15px ;
+    }
+    .english-reco-heading{
+        text-align: left;
+    }
+
+    .arabic-reco-heading{
+        text-align: right;
     }
 }
 
@@ -1820,6 +1851,14 @@ footer p {
     background-color: #000
 }
 
+
+.arabic-about-container{
+    background-position: left;
+}
+
+.english-about-container{
+    background-position: right;
+}
 .footer-tab p {
     padding: 0 var(--spacing-lg) 0 var(--spacing-lg)
 }
@@ -2017,14 +2056,14 @@ img[alt="client"] {
     padding: var(--spacing-lg) var(--spacing-md);
     font-size: var(--h4-size);
     text-transform: capitalize;
-    width: 22%;
+    width: 26%;
     color: #B8B8B8;
 }
 
 .test-center-background .orange-card {
     background-color: rgba(255, 173, 0, 0.7);
     position: relative;
-    right: 295px;
+    right: 158px;
     bottom: 52px;
     color: white;
 }
@@ -2449,6 +2488,14 @@ img[alt="inno-people"] {
     background-image: url(./images/blog-back.jpg);
     background-size: cover;
     height: 100vh;
+}
+
+.english-main-container{
+    background-image: url(./images/blog-back.jpg);
+}
+
+.arabic-main-container{
+    background-image: url(./images/arabic-blog-back.png);
 }
 
 .blog-container {
@@ -3449,7 +3496,7 @@ swiper-slide img {
     padding: var(--spacing-lg) var(--spacing-lg);
     position: relative;
     left: unset;
-    right: 81px !important;
+    right: 0;
     bottom: -51px;
     box-shadow: 0 0 11px 1px rgb(241 241 241);
     width: 43%;
@@ -7493,6 +7540,11 @@ img[alt="compilance-car"] {
         font-size: var(--h3-size);
         margin-top: -300px;
     }
+
+    .arabic-inner-margin{
+        right: inherit;
+    }
+    
     .mobile-background1{
         background-image: url(./images/colored1.png);
         background-size: cover;
