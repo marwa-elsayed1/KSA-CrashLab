@@ -3,7 +3,7 @@ const form = document.getElementById('contact-form');
 
 
 function SendEmail() {
-    fetch("http://34.194.42.154:3000/sendEmail"
+    fetch("https://34.194.42.154:3000/sendEmail"
 , {
         method: "POST",
         body: JSON.stringify({
