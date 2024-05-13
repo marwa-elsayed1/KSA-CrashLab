@@ -245,6 +245,7 @@ function change_arabic() {
     addedRealText.classList.remove('added-real-text');
   }
 
+  
  
   
 
@@ -359,6 +360,9 @@ function change_english() {
     englishStandardFrame.classList.add("arabic-standard-frame");
     englishStandardFrame.classList.remove("english-standard-frame");
   }
+
+ 
+
 
 
 

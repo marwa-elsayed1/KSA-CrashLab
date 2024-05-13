@@ -1767,7 +1767,19 @@ img[alt=about-us4]:hover {
 }
 
 .customer-stories .left-column {
-    width: 62%
+    width: 69%;
+    transform: scaleX(-1);
+    height: 94vh;
+}
+
+.arabic-left-customer{
+    width: 62%;
+    transform: scaleX(-1);
+    height: 71vh;
+}
+
+.english-left-customer{
+
 }
 
 .customer-stories .mini-orange-subtitle,
@@ -2063,7 +2075,6 @@ img[alt="client"] {
 .test-center-background .orange-card {
     background-color: rgba(255, 173, 0, 0.7);
     position: relative;
-    right: 158px;
     bottom: 52px;
     color: white;
 }
@@ -3559,7 +3570,7 @@ swiper-slide img {
     padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-xl) var(--spacing-lg);
     width: 60%;
     right: 0%;
-    margin-top: -550px;
+    margin-top: -480px;
     position: absolute;
     transition: all 0.5s ease-in-out;
 }
@@ -7538,7 +7549,7 @@ img[alt="compilance-car"] {
     .inner-margin {
         right: 1%;
         font-size: var(--h3-size);
-        margin-top: -300px;
+        margin-top: -480px;;
     }
 
     .arabic-inner-margin{
@@ -7778,7 +7789,7 @@ img[alt="compilance-car"] {
         z-index: 2;
         position: absolute;
         margin: 25px 0 25px 0;
-        margin-top: -460px;
+        margin-top: -505px;
         font-size: var(--h3-size);
         display: flex;
         flex-direction: column;
