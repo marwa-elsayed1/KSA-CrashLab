@@ -22,7 +22,6 @@ function SendEmail() {
     .catch((err) => {
         console.log(err);
     });
-console.log("hello")
 }
 form.addEventListener('submit', (e) => {
     e.preventDefault();

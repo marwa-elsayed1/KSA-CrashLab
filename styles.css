@@ -2790,6 +2790,9 @@ img[alt="right-arrow"]:hover {
     padding: 30px;
 }
 
+#content-container li{
+    margin-inline: 50px;
+}
 
 
 .blog-article-tab .section-container {
