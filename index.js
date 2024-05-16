@@ -1,5 +1,6 @@
 
 
+
 getLanguage();
 function getLanguage() {
   var currentLanguage = localStorage.getItem('lang');
@@ -8,7 +9,6 @@ function getLanguage() {
   else
     change_english();
 }
-
 
 
 
