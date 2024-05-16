@@ -4,6 +4,8 @@
 //  document.getElementById("english-flag").addEventListener('click', change_english);
 // }
 
+
+
 // CHANGING LANGUAGE BASED ON USER BROWSER
 let currentWebsiteURL = window.location.href; // https://ksacrashlab.com/
 let userLang = navigator.language || navigator.userLanguage; 
@@ -28,6 +30,20 @@ if(currentWebsiteURL = "file:///D:/KSA-CrashLab/index.html"){
 
   }
 }
+
+
+
+// //REMOVING HTML
+
+// let currentURLHTML = window.location.href ;
+// console.log(currentURLHTML);
+// // Remove .html extension
+// var newUrl = currentURLHTML.replace(".html", "");
+// console.log(newUrl);
+// window.location.href = newUrl;
+// console.log(window.location.href);
+
+
 
 
 
