@@ -33,15 +33,18 @@ if(currentWebsiteURL = "file:///D:/KSA-CrashLab/index.html"){
 
 
 
-// //REMOVING HTML
+// REMOVING HTML
 
-// let currentURLHTML = window.location.href ;
+let currentURLHTML = window.location.href ;
 // console.log(currentURLHTML);
-// // Remove .html extension
-// var newUrl = currentURLHTML.replace(".html", "");
-// console.log(newUrl);
-// window.location.href = newUrl;
-// console.log(window.location.href);
+
+// Remove .html extension
+if(currentURLHTML.includes(".html")){
+  var newUrl = currentURLHTML.replace(".html", "");
+  console.log(newUrl);
+  window.location.href = newUrl;
+  console.log(window.location.href);
+}
 
 
 
