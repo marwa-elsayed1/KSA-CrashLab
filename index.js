@@ -1,3 +1,34 @@
+// document.getElementById("arabic-flag").addEventListener('click', change_arabic);
+
+// if (document.getElementById("english-flag")) {
+//  document.getElementById("english-flag").addEventListener('click', change_english);
+// }
+
+// CHANGING LANGUAGE BASED ON USER BROWSER
+let currentWebsiteURL = window.location.href; // https://ksacrashlab.com/
+let userLang = navigator.language || navigator.userLanguage; 
+console.log(userLang);
+
+if(currentWebsiteURL = "file:///D:/KSA-CrashLab/index.html"){
+
+  const bodyElement = document.getElementById('body');
+
+  if(userLang == 'ar'){
+    bodyElement.style.direction = "rtl";
+    document.getElementById("main-flag").src = "./images/arabic.svg";
+    console.log("browser in arabic");
+    change_arabic();
+  }
+  else{
+    bodyElement.style.direction = "rtl";
+    document.getElementById("main-flag").src = "./images/english.svg";
+    console.log("browser in english");
+    change_english();
+ 
+
+  }
+}
+
 
 
 getLanguage();
@@ -83,8 +114,7 @@ function showBackground() {
 
 function change_arabic() {
 
-// Accessing Before Pseudo Element
-
+ 
 
   let ArabicCarElement = document.querySelector('.comp-car-description');
 
@@ -109,11 +139,7 @@ function change_arabic() {
   }, 1000); 
   
 
-  var langImg = document.getElementById("english-flag");
 
-  langImg.addEventListener('click', ()=>{
-    window.location.reload(true);
-  })
 
   var contactFormContainer = document.querySelector('.ul-list');
   if (contactFormContainer) {
@@ -145,6 +171,18 @@ function change_arabic() {
   if (innerDetails) {
     innerDetails.classList.add("arabic-next");
     innerDetails.classList.remove("english-next");
+  }
+
+  const bodyElement = document.getElementById('body');
+  const languageToggle = document.querySelector('.language-toggle');
+
+  if (bodyElement) {
+    localStorage.setItem('lang', 'Ar');
+    bodyElement.style.direction = "rtl";
+    languageToggle.classList.remove("active");
+
+    document.getElementById("main-flag").src = "./images/arabic.svg";
+    document.querySelector("#language-toggle-span").textContent = "";
   }
   
 
@@ -180,17 +218,9 @@ function change_arabic() {
     contactFormContainer.classList.remove("english-ul-list");
   }
 
-  const bodyElement = document.getElementById('body');
-  const languageToggle = document.querySelector('.language-toggle');
 
-  if (bodyElement) {
-    localStorage.setItem('lang', 'Ar');
-    bodyElement.style.direction = "rtl";
-    languageToggle.classList.remove("active");
 
-    document.getElementById("main-flag").src = "./images/arabic.svg";
-    document.querySelector("#language-toggle-span").textContent = "";
-  }
+  
 
 
 
@@ -327,6 +357,7 @@ function change_arabic() {
 
 
 function change_english() {
+  
   document.getElementById("loader").style.display = "block";
 
   setTimeout(function() {
@@ -390,6 +421,17 @@ function change_english() {
     englishAboutContainer.classList.add("english-about-container");
     englishAboutContainer.classList.remove('arabic-about-container');
   }
+  const bodyElement = document.getElementById('body');
+  const languageToggle = document.querySelector('.language-toggle');
+
+  if (bodyElement) {
+    localStorage.setItem('lang', 'En');
+    bodyElement.style.direction = "ltr";
+    languageToggle.classList.remove("active");
+
+    document.getElementById("main-flag").src = "./images/english.svg";
+    document.querySelector("#language-toggle-span").textContent = "";
+  }
 
 
   var innerDetails = document.querySelector('.next');
@@ -419,17 +461,8 @@ function change_english() {
     englishBlogLeftArrow.classList.remove("arabic-blog-arrow");
   }
 
-  const bodyElement = document.getElementById('body');
-  const languageToggle = document.querySelector('.language-toggle');
 
-  if (bodyElement) {
-    localStorage.setItem('lang', 'En');
-    bodyElement.style.direction = "ltr";
-    languageToggle.classList.remove("active");
 
-    document.getElementById("main-flag").src = "./images/english.svg";
-    document.querySelector("#language-toggle-span").textContent = "";
-  }
 
 
 
@@ -523,7 +556,6 @@ function change_english() {
 function appear() {
   document.querySelector(".ul-list").classList.toggle("display");
 }
-
 
 
 function showDiv(Div) {

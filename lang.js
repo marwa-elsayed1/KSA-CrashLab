@@ -9,3 +9,8 @@ function getLanguage(){
 }
 
 
+
+// var userLang = navigator.language || navigator.userLanguage; 
+// alert ("The language is: " + userLang);
+// en-US
+// ar
